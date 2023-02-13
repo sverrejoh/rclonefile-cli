@@ -7,12 +7,12 @@ const cli = meow(
 	  $ foo <source> <destination>
 
 	Options
-    --no-follow, -n Don't follow the src file if it is a symbolic link
+    --no-follow, -f Don't follow the src file if it is a symbolic link
 
-    --no-owner-copy, -o Don't copy ownership information from the source when
+    --no-owner-copy, -c Don't copy ownership information from the source when
       run called with superuser privileges.
 
-    --clone-acl, -c Copy ACLs from the source file.
+    --clone-acl, -a Copy ACLs from the source file.
 
 	Examples
 	  $ rclonefile super-mario.png super-clone.png
@@ -22,17 +22,17 @@ const cli = meow(
     flags: {
       noFollow: {
         type: "boolean",
-        alias: "n",
+        alias: "f",
         default: false,
       },
       noOwnerCopy: {
         type: "boolean",
-        alias: "o",
+        alias: "c",
         default: false,
       },
       cloneAcl: {
         type: "boolean",
-        alias: "c",
+        alias: "a",
         default: false,
       },
     },
