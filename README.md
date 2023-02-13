@@ -27,15 +27,12 @@ files.
 $ rclonefile --help
 
 	Usage
-	  $ foo <source> <destination>
+	  $ rclonefile <source> <destination>
 
-	Options
-    --no-follow, -f Don't follow the src file if it is a symbolic link
-
-    --no-owner-copy, -c Don't copy ownership information from the source when
-      run called with superuser privileges.
-
-    --clone-acl, -a Copy ACLs from the source file.
+    Options
+    --no-follow, -f      Don't follow the src file if it is a symbolic link
+    --no-owner-copy, -c  Don't copy ownership information from the source
+    --clone-acl, -a      Copy ACLs from the source file.
 
 	Examples
 	  $ rclonefile super-mario.png super-clone.png
