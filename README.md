@@ -15,7 +15,7 @@ files.
 
 ```sh
 
-	npm install --global rclonefile-cli
+    npm install --global rclonefile-cli
 
 ```
 
@@ -26,15 +26,15 @@ files.
 
 $ rclonefile --help
 
-	Usage
-	  $ rclonefile <source> <destination>
+    Usage
+    $ rclonefile <source> <destination>
 
     Options
     --no-follow, -f      Don't follow the src file if it is a symbolic link
     --no-owner-copy, -c  Don't copy ownership information from the source
     --clone-acl, -a      Copy ACLs from the source file.
 
-	Examples
-	  $ rclonefile super-mario.png super-clone.png
+    Examples
+      $ rclonefile super-mario.png super-clone.png
 
 ```
