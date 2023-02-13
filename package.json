@@ -1,0 +1,19 @@
+{
+  "name": "rclonefile-cli",
+  "version": "1.0.0",
+  "type": "module",
+  "bin": {
+    "rclonefile": "./lib/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w"
+  },
+  "exports": "lib/index.js",
+  "license": "MIT",
+  "dependencies": {
+    "meow": "^11.0.0",
+    "rclonefile": "^1.0.1",
+    "typescript": "^4.9.5"
+  }
+}

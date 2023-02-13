@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "module": "nodenext",
+    "rootDir": "src",
+    "outDir": "lib",
+    "target": "es2020"
+  }
+}
