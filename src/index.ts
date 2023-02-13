@@ -39,4 +39,4 @@ const cli = meow(
   }
 );
 
-await clonefile(cli.input[0], cli.input[1], cli.flags);
+await cloneFile(cli.input[0], cli.input[1], cli.flags);
