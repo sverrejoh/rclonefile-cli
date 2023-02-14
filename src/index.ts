@@ -6,7 +6,7 @@ import { cloneFile } from "rclonefile";
 const cli = meow(
   `
 	Usage
-	  $ foo <source> <destination>
+	  $ rclonefile <source> <destination>
 
 	Options
     --no-follow, -f Don't follow the src file if it is a symbolic link
