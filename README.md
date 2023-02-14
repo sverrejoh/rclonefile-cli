@@ -1,15 +1,20 @@
 # rclonefile-cli
 
-Clone files.
+> The macOS API for creating copy on write clones of files and folders
 
 ## Description
 
-The macOS API for creating copy on write clones of files.
-
 This is a small wrapper around the
-[clonefile](https://www.manpagez.com/man/2/clonefile/) API on macOS for cloning
-files.
+[clonefile(2)](https://www.manpagez.com/man/2/clonefile/) API on macOS for
+cloning files and folders.
 
+## Why?
+
+- Clones files and folders, without taking up disk space
+- Uses [clonefile(2)](https://www.manpagez.com/man/2/clonefile/) introduced in macOS 10.12
+- Takes advantage of the APFS file system
+- All flags available.
+- Fast!
 
 ## Install
 
