@@ -13,7 +13,10 @@
   "license": "MIT",
   "dependencies": {
     "meow": "^11.0.0",
-    "rclonefile": "^1.0.1",
-    "typescript": "^4.9.5"
+    "rclonefile": "^1.0.1"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.5",
+    "@types/node": "^18.13.0"
   }
 }
