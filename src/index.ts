@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import meow from "meow";
 import { cloneFile } from "rclonefile";
 
@@ -39,4 +41,17 @@ const cli = meow(
   }
 );
 
-await cloneFile(cli.input[0], cli.input[1], cli.flags);
+const [source, target] = cli.input;
+try {
+  if (!source) {
+    throw Error("Missing file operand");
+  }
+  if (!target) {
+    throw Error(`Missing destination file operand after '${source}'`);
+  }
+
+  await cloneFile(cli.input[0], cli.input[1], cli.flags);
+} catch (error: any) {
+  console.error(`rclonefile: ${error.message}`);
+  process.exit(1);
+}
