@@ -38,3 +38,8 @@ $ rclonefile --help
       $ rclonefile super-mario.png super-clone.png
 
 ```
+
+## Related
+
+- [rclonefile](https://github.com/sverrejoh/rclonefile) - API for this module
+- [clonefile(2)](https://www.manpagez.com/man/2/clonefile/) - Man page for system API
